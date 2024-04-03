@@ -7,6 +7,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -82,8 +83,35 @@ h2 {
     margin-top: 30px;
 }
 
-
-
+footer  {
+    color: white;
+    padding: 20px;
+    background-color: #000000;
+    width: 95%; 
+    max-width: 420px; 
+    opacity: 0.8;
+    border-radius: 25px;
+    text-align: center;
+    margin: 20px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+@media (max-width: 500px) {
+    .caixa-maior {
+        width: 95%; 
+        max-width: 270px; 
+    }
+    input {
+        font-size: 16px;
+        width: calc( 100% - 70px);
+    }
+    footer  {
+        font-size: 12px;
+        max-width: 270px; 
+    }
+}
 
 
 
