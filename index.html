@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +8,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>PREVISÃO DO TEMPO</title>
+    <script src="scripts.js"></script>
 </head>
 <body>
-    <div class="content">
-     <input class="input" placeholder="Digite o nome da cidade">
-     <button class="button-buscar">
-        <img class="img-buscar" src="https://www.svgrepo.com/show/488200/find.svg" alt="busca">
-     </button>
-     <h2 class="city">Tempo em Campinas</h2>
-     <p class="temp">21°C</p>
-      <div class="conteiner">
-       <img class="img-previsão" src="https://openweathermap.org/img/wn/04n.png" alt="Icone do tempo"> 
-       <p class="text-previsão">Nublado</p>
-       
-      </div>
-     <p class="umidade">Umidade: 76%</p>
+    <div class="caixa-maior">
+
+        <input class="input-cidade" placeholder="Digite o nome da cidade">
+        <button onclick="cliqueiNoBotao()">
+            <img class="lupa" src="https://www.svgrepo.com/show/488200/find.svg">
+        </button>
+
+        <div class="caixa-media">
+            <h2 class="cidade">Tempo em Rio de Janeiro</h2>
+            <p class="temp">28°C</p>
+
+            <div class="caixa-menor">
+                <img class="icone" src="https://openweathermap.org/img/wn/04n.png">
+                <p class="descricao">Nuvens Dispersas</p>
+            </div>
+
+            <p class="umidade">Umidade: 70%</p>
+        </div>
+
     </div>
 </body>
 </html>
